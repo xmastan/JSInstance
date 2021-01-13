@@ -1,0 +1,79 @@
+  
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,viewport-fit=cover">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Demo</title></head>
+<body>
+</body>
+<script>
+  const create_aTag = () => {return document.createElement('a')}
+  const create_brTag = () => {return document.createElement('br')}
+  const arr =
+    [
+      '+=',
+      'Array',
+      'DOM操作表格',
+      'Date',
+      'break、continue',
+      'firstChild',
+      'foreach',
+      'getByClass',
+      'li排序',
+      'li排序2',
+      'offsetleft offsetTop offsetWidth offsetHeight',
+      'return',
+      'search',
+      'setAttribute',
+      'style和className',
+      'switch',
+      'value,title,className',
+      '不定参、可变参',
+      '什么是真，什么是假',
+      '全选、不选、反选',
+      '分享到',
+      '创建、插入元素',
+      '取非行间样式',
+      '变量作用域',
+      '图片淡入淡出',
+      '基础运动',
+      '定时器',
+      '延时提示框',
+      '循环',
+      '提取行间事件',
+      '插入行、删除行',
+      '改变样式',
+      '改变颜色',
+      '数据类型',
+      '数据类型转换',
+      '数码时钟',
+      '无缝滚动',
+      '求模',
+      '点击显示隐藏',
+      '父节点',
+      '秒转分钟',
+      '移除元素',
+      '第一个js',
+      '简易日历',
+      '网页换肤',
+      '节点',
+      '表格排序',
+      '表格搜索',
+      '表格搜索多个关键词',
+      '选项卡',
+      '鼠标移入移出',
+      '隔行变色',
+      '隐式类型转换'
+    ]
+  const nodeDiv = document.createDocumentFragment()
+  arr.forEach(title => {
+    const aTag = create_aTag()
+    const br = create_brTag()
+    aTag.innerHTML = title
+    aTag.setAttribute("href",`https://github.com/xmastan/JSInstance/${title}.html`)
+    nodeDiv.appendChild(aTag)
+    nodeDiv.appendChild(br)
+  })
+  document.body.appendChild(nodeDiv)
+</script>
+</html>
