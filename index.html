@@ -33,34 +33,6 @@
       '全选、不选、反选',
       '分享到',
       '创建、插入元素',
-
-<script>
-  const create_aTag = () => {return document.createElement('a')}
-  const create_brTag = () => {return document.createElement('br')}
-  const arr =
-    [
-      '+=',
-      'Array',
-      'DOM操作表格',
-      'Date',
-      'break、continue',
-      'firstChild',
-      'foreach',
-      'getByClass',
-      'li排序',
-      'li排序2',
-      'offsetleft offsetTop offsetWidth offsetHeight',
-      'return',
-      'search',
-      'setAttribute',
-      'style和className',
-      'switch',
-      'value,title,className',
-      '不定参、可变参',
-      '什么是真，什么是假',
-      '全选、不选、反选',
-      '分享到',
-      '创建、插入元素',
       '取非行间样式',
       '变量作用域',
       '图片淡入淡出',
@@ -98,8 +70,7 @@
     const aTag = create_aTag()
     const br = create_brTag()
     aTag.innerHTML = title
-    let titleText  = encodeURI(title)
-    aTag.setAttribute("href",`https://github.com/xmastan/JSInstance/blob/main/${titleText}.html`)
+    aTag.setAttribute("href",`https://github.com/xmastan/JSInstance/blob/main/${title}.html`)
     nodeDiv.appendChild(aTag)
     nodeDiv.appendChild(br)
   })
